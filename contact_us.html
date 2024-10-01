@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="contact_us.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="box-shadow: 0 0 10px black;">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="contact-us-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6 col-12">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group col-md-6 col-12">
+                        <label for="email">Your Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6 col-12">
+                        <label for="zip">Your Zip Code</label>
+                        <input type="text" class="form-control" id="zip" placeholder="Enter your zip code" required>
+                    </div>
+                    <div class="form-group col-md-6 col-12">
+                        <label for="contact">Your Contact Number</label>
+                        <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="services">What Services Are You Interested In?</label>
+                    <select class="form-control" id="services" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Amazon">Amazon</option>
+                        <option value="Flipkart">Flipkart</option>
+                        <option value="Snapdeal">Snapdeal</option>
+                        <option value="Myntra">Myntra</option>
+                        <option value="Ajio">Ajio</option>
+                        <option value="Limeroad">Limeroad</option>
+                        <option value="Tata Cliq">Tata Cliq</option>
+                        <option value="Jio Mart">Jio Mart</option>
+                        <option value="Big Basket">Big Basket</option>
+                        <option value="Nykaa">Nykaa</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 tex3-center mb-4">
+                    <img src="images/logo.png" alt="Company Logo" class="mb-3" style="max-height: 80px;">
+                    <div>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Services</a></li>
+                        <li><a href="#" class="text-light">Reviews</a></li>
+                        <li><a href="#" class="text-light">About Us</a></li>
+                    </ul>
+                    <h5>More</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">FAQs</a></li>
+                        <li><a href="#" class="text-light">Terms and Conditions</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Our Locations</h5>
+                    <p><strong>Head Office:</strong><br>AMR Tech Park II, No.25 & 26, Hongasandra, Hosur Main Road, Bangalore – 560 068, India.</p>
+                    <p><strong>Regional Head Office:</strong><br>302, Phoenix Prime, Opp. Kotak Mahindra Bank, Near L&T Circle Karelibagh, Vadodara – 390019, Gujarat.</p>
+                    <p><strong>Our Branches:</strong><br>Bengaluru, Delhi, Mumbai, Hyderabad, Kochi, Chandigarh, Chennai.</p>
+                    <p><strong>Upcoming Branches:</strong><br>Rajkot, Surat, Raipur, Jaipur, Indore.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <small>&copy; 2024 Company Name. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function animateCount(elementId, targetCount) {
+            let count = 0;
+            const increment = Math.ceil(targetCount / 100);
+
+            const updateCount = () => {
+                count += increment;
+                if (count > targetCount) {
+                    count = targetCount;
+                }
+                document.getElementById(elementId).innerText = count;
+
+                if (count < targetCount) {
+                    requestAnimationFrame(updateCount);
+                }
+            };
+
+            requestAnimationFrame(updateCount);
+        }
+
+        animateCount('sellersCount', 958);
+        animateCount('ordersCount', 958);
+        animateCount('revenueCount', 958);
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
