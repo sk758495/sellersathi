@@ -1,0 +1,272 @@
+/* General Styles */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: transparent;
+    box-shadow: none;
+}
+
+.navbar-brand .logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-link {
+    color: black;
+    margin-right: 20px;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: left;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.top-sale {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: purple;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn-pink {
+    background-color: #ff007f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-blue {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.blazer-img {
+    max-width: 100%!important;
+    height: auto;
+}
+
+
+/* Features Section */
+
+.features-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.features-section .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features-section img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/* Adjust carousel image size */
+
+.blazer-img {
+    max-width: 70%;
+    height: auto;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 191, 255);
+}
+
+.card-img-top {
+    height: 200px;
+    /* Set a fixed height for images */
+    object-fit: cover;
+    /* Ensure the image covers the space */
+}
+
+
+/* Counter */
+
+.stat-card {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+
+/* Brand logo carousel image */
+
+.carousel-inner img {
+    max-height: 400px;
+    /* Limit logo height */
+    object-fit: contain;
+    /* Maintain aspect ratio */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+section .border {
+    border: 1px solid #dee2e6;
+    background-color: #ed097b;
+    border-radius: 5px;
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero-section {
+        flex-direction: column;
+        /* Stack items vertically */
+        height: auto;
+        /* Allow height to adjust */
+        text-align: center;
+        /* Center text */
+        padding: 20px;
+        /* Add padding */
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+        /* Adjust font size */
+    }
+    .top-sale {
+        font-size: 1rem;
+        /* Adjust font size */
+    }
+    .buttons {
+        flex-direction: column;
+        /* Stack buttons */
+        align-items: center;
+        /* Center buttons */
+        margin-top: 15px;
+        /* Adjust margin */
+    }
+    .btn-pink,
+    .btn-blue {
+        padding: 8px 12px;
+        /* Smaller padding */
+        font-size: 0.9rem;
+        /* Smaller font size */
+        margin: 5px 0;
+        /* Add margin for spacing */
+    }
+    /* Features Section */
+    .features-section .row {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+    .features-section img {
+        width: 40px;
+        /* Smaller icon size */
+    }
+    /* Card adjustments */
+    .card {
+        margin-bottom: 20px;
+        /* Space out cards */
+    }
+    .card-img-top {
+        height: 150px;
+        /* Smaller height for images */
+    }
+    /* Stat Cards */
+    .stat-card {
+        margin-bottom: 20px;
+        /* Space out stat cards */
+    }
+    .stat-number {
+        font-size: 1.5em;
+        /* Smaller size for stats */
+    }
+    /* Brand logo carousel image */
+    .carousel-inner img {
+        max-height: 80px;
+        /* Adjust logo height */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+        /* Further adjust font size */
+    }
+    .top-sale {
+        font-size: 0.9rem;
+        /* Smaller top sale text */
+    }
+    .btn-pink,
+    .btn-blue {
+        padding: 6px 10px;
+        /* Smaller padding */
+        font-size: 0.8rem;
+        /* Smaller font size */
+    }
+    .stat-number {
+        font-size: 1.2em;
+        /* Smaller size for stats */
+    }
+    .card-img-top {
+        height: 120px;
+        /* Further reduce image height */
+    }
+}
