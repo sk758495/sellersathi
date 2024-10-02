@@ -161,6 +161,9 @@ html {
     /* Maintain aspect ratio */
 }
 
+
+/* Footer */
+
 footer a:hover {
     text-decoration: underline;
 }
@@ -170,6 +173,166 @@ section .border {
     background-color: #ed097b;
     border-radius: 5px;
 }
+
+
+/* highly Experience */
+
+.text-content {
+    flex: 1;
+    margin-right: 50px;
+    min-width: 300px;
+    /* Minimum width for better responsiveness */
+}
+
+h2 {
+    color: purple;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+h1 {
+    color: #333;
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    /* Increased font size for better readability */
+}
+
+.check-mark {
+    color: green;
+    margin-right: 10px;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    /* Center the image on small screens */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Responsive design for mobile devices */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    li {
+        font-size: 14px;
+        /* Adjusting font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        flex-direction: column;
+        /* Stack items on small screens */
+        align-items: center;
+        /* Center items horizontally */
+    }
+    .text-content {
+        margin-right: 0;
+        /* Remove margin on small screens */
+        text-align: center;
+        /* Center text content */
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    li {
+        font-size: 12px;
+        /* Further adjust font size */
+    }
+}
+
+
+/* Confidence section  */
+
+.section-padding {
+    padding: 1.5rem 0;
+    /* Adjust padding as needed */
+}
+
+.section-padding:hover {
+    padding: 1.5rem 0;
+    background-color: rgb(213, 199, 199);
+    /* Adjust padding as needed */
+}
+
+.content-container {
+    max-width: 1050px;
+    /* Limit max width for better readability */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.headline {
+    color: purple;
+    font-weight: 600;
+    /* Bold font weight */
+    font-size: 1.5rem;
+    /* Adjust font size as needed */
+}
+
+.subheadline {
+    font-weight: 800;
+    /* Bold font weight */
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    /* Ensure responsive scaling */
+}
+
+.description-text {
+    margin: 10px 0;
+    line-height: 1.6;
+    /* Improve readability */
+}
+
+
+/* Media queries for extra small devices */
+
+@media (max-width: 576px) {
+    .headline {
+        font-size: 1.25rem;
+        /* Adjust font size for smaller screens */
+    }
+    .subheadline {
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+
+/* Confidence section End Here */
 
 
 /* Media Queries for Mobile Responsiveness */
