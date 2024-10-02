@@ -22,12 +22,6 @@ html {
     margin-right: 20px;
 }
 
-.sticky-top {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
 
 /* Hero Section */
 
@@ -280,7 +274,6 @@ img {
 @media (max-width: 480px) {
     .container {
         padding: 10px;
-        flex-direction: column;
         /* Stack items on small screens */
         align-items: center;
         /* Center items horizontally */
