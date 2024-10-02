@@ -108,6 +108,9 @@ html {
     height: auto;
 }
 
+
+/*<!---Account Management-->*/
+
 .card {
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -416,7 +419,7 @@ img {
         width: 40px;
         /* Smaller icon size */
     }
-    /* Card adjustments */
+    /* <!---Account Management--> Card adjustments */
     .card {
         margin-bottom: 20px;
         /* Space out cards */
