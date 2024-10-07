@@ -48,6 +48,7 @@ html {
     /* Cursor blink */
     white-space: pre-wrap;
     /* Allow text to wrap */
+    color: white;
 }
 
 @keyframes blink-caret {
@@ -86,6 +87,26 @@ html {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.review-card-1 {
+    background-color: black;
+    /* Card background */
+    color: white;
+    /* Text color */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    /* Set a max width for better layout */
+    margin: 20px auto;
+    /* Center the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card-1:hover {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .review-card {
