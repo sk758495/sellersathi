@@ -33,9 +33,32 @@ html {
     margin: 0px;
     font-weight: 800;
     font-size: 58px;
-    color: #121df3;
+    color: rgb(0, 191, 255);
     text-shadow: 2px 12px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
     /* Text shadow effect */
+}
+
+.typing {
+    display: inline;
+    /* Inline for wrapping */
+    border-right: 2px solid white;
+    /* Cursor effect */
+    animation: blink-caret 0.75s step-end infinite;
+    /* Cursor blink */
+    white-space: pre-wrap;
+    /* Allow text to wrap */
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+        /* Blink effect */
+    }
 }
 
 
