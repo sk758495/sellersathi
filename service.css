@@ -37,6 +37,7 @@ html {
     font-weight: 800;
     font-size: 58px;
     text-shadow: 2px 12px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(0, 162, 255);
     /* Text shadow effect */
 }
 
@@ -53,6 +54,7 @@ html {
 
 .card-title {
     text-align: left;
+    text-transform: uppercase;
 }
 
 .card-text {
