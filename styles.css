@@ -23,6 +23,9 @@ html {
 }
 
 
+/* featured-carouse */
+
+
 /* Hero Section */
 
 .hero-section {
@@ -196,8 +199,9 @@ footer a:hover {
 
 section .border {
     border: 1px solid #dee2e6;
-    background-color: #ed097b;
+    background-color: lightskyblue;
     border-radius: 5px;
+    box-shadow: 0 0 3px black;
 }
 
 

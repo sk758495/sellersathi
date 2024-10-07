@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Sathi</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -63,6 +62,35 @@
 
     <!-- Navbar End -->
 
+
+    <!-- Featured Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/carasoule-.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/carasoule-.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/carasoule-.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
@@ -70,18 +98,18 @@
                 <div class="col-md-6">
                     <p class="top-sale">NOW SELL ON MULTIPLE PLATFORMS</p>
                     <h1>Get New Customers Online</h1>
-                    <p>Reach Millions on Amazon, Flipcart, and More - Boost Your Bussiness Today</p>
+                    <p>Reach Millions on Amazon, Flipcart, and More - Boost Your Business Today</p>
                     <div class="buttons">
                         <a href="#" class="btn btn-pink">Book Now</a>
                         <a href="#" class="btn btn-blue">Know More</a>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <!-- Bootstrap Carousel -->
-                    <div id="blazerCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Blazer Carousel -->
+                    <div id="blazerCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="images/LOGO-sellersathi.png" width="100px" alt="Blazer 1" class="d-block w-100 blazer-img">
+                                <img src="images/LOGO-sellersathi.png" alt="Blazer 1" class="d-block w-100 blazer-img">
                             </div>
                             <div class="carousel-item">
                                 <img src="images/LOGO-sellersathi.png" alt="Blazer 2" class="d-block w-100 blazer-img">
@@ -91,25 +119,24 @@
                             </div>
                         </div>
                         <!-- Carousel Controls -->
-                        <a class="carousel-control-prev" href="#blazerCarousel" role="button" data-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#blazerCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#blazerCarousel" role="button" data-slide="next">
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#blazerCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Features Section -->
     <section class="features-section">
         <div class="container text-center">
-            <h3 style="text-align: center; color: black; font-size: 1.2rem;font-weight: 800; font-size: 28px;">What We Do..</h3>
+            <h3 style="text-align: center; color: black; font-size: 1.2rem;font-weight: 800; font-size: 28px;">WHAT WE DO..</h3>
             <div class="row">
                 <div class="col-md-4">
                     <img src="images/customer-service.png" alt="Free Shipping">
@@ -129,7 +156,7 @@
 
     <!---Account Management-->
     <section style="margin-top: 20px; background-color: lightskyblue; padding: 50px;">
-        <h1 style="text-align: center; margin: 20px; font-weight: 800;">Full Seller Account Management Services</h1>
+        <h1 style="text-align: center; margin: 20px; font-weight: 800;">FULL SELLER ACCOUNT MANAGEMENT SERVICES</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6 mb-4" id="cart-section">
@@ -205,7 +232,7 @@
         <div class="container d-flex flex-wrap align-items-center">
             <div class="text-content flex-fill me-5">
                 <h2 class="text-purple">HIGHLY EXPERIENCED IN MARKETPLACE</h2>
-                <h1 class="mt-3">Ready & Waiting To Assist</h1>
+                <h1 class="mt-3">READY & WAITING TO ASSIST</h1>
                 <ul class="list-unstyled mt-3">
                     <li><span class="check-mark text-success">✔</span> Uploading to marketplace</li>
                     <li><span class="check-mark text-success">✔</span> Managing Reports</li>
@@ -223,7 +250,7 @@
     <section class="section-padding">
         <div class="content-container text-center">
             <h1 class="headline mt-3">Highly experienced seller</h1>
-            <h3 class="subheadline fw-bold">Best E-Commerce Product Listing Services Provider in India</h3>
+            <h3 class="subheadline fw-bold">BEST E-COMMERCE PRODUCT LISTING SERVICES PROVIDER IN INDIA</h3>
             <img src="images/confidence.jpg" alt="Man showing OK sign" class="responsive-image my-3">
             <p class="description-text my-4">
                 We provide hand-holding support in Catalogue Account management services for E-commerce & E-commerce product listing services to its sellers on multiple marketplace platforms. We work as a strong digital marketing partner of E-commerce Sellers in Delhi,
@@ -267,34 +294,39 @@
     </div>
 
 
-    <div id="brandCarousel " class="carousel slide my-5 " data-ride="carousel ">
-        <h1 style="text-align: center; margin: 20px; font-weight: 800; color: rgb(128, 0, 94); ">Premium Consulting Platform</h1>
-        <div class="carousel-inner ">
-            <div class="carousel-item active ">
-                <div class="row ">
-                    <div class="col-6 col-md-3 "><img src="images/amazon.jpg " class="d-block mx-auto " alt="Brand Logo 1 " style="max-height: 100px; "></div>
-                    <div class="col-6 col-md-3 "><img src="images/ebay.jpg " class="d-block mx-auto " alt="Brand Logo 2 " style="max-height: 100px; "></div>
-                    <div class="col-6 col-md-3 "><img src="images/meesho.png " class="d-block mx-auto " alt="Brand Logo 3 " style="max-height: 100px; "></div>
-                    <div class="col-6 col-md-3 "><img src="images/glowroad.jpg " class="d-block mx-auto " alt="Brand Logo 4 " style="max-height: 100px; "></div>
+    <!-- Brand Carousel -->
+    <div id="brandCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+        <h1 style="text-align: center; margin: 20px; font-weight: 800; color: rgb(128, 0, 94);">PREMIUM CONSULTING PLATFORM</h1>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-6 col-md-2"><img src="images/amazon.jpg" class="d-block mx-auto" alt="Brand Logo 1" style="max-height: 100px;"></div>
+                    <div class="col-6 col-md-2"><img src="images/ebay.jpg" class="d-block mx-auto" alt="Brand Logo 2" style="max-height: 100px;"></div>
+                    <div class="col-6 col-md-2"><img src="images/meesho.png" class="d-block mx-auto" alt="Brand Logo 3" style="max-height: 100px;"></div>
+                    <div class="col-6 col-md-2"><img src="images/glowroad.jpg" class="d-block mx-auto" alt="Brand Logo 4" style="max-height: 100px;"></div>
+                    <div class="col-6 col-md-2"><img src="images/jiomart.png" class="d-block mx-auto" alt="Brand Logo 8" style="max-height: 100px;"></div>
+                    <div class="col-6 col-md-2"><img src="images/myntra.png" class="d-block mx-auto" alt="Brand Logo 8" style="max-height: 100px;"></div>
                 </div>
             </div>
-            <div class="carousel-item ">
-                <div class="row ">
-                    <div class="col-6 col-md-3 "><img src="images/amazon.jpg " class="d-block mx-auto " alt="Brand Logo 5 " style="max-height: 100px; "></div>
-                    <div class="col-6 col-md-3 "><img src="images/ebay.jpg " class="d-block mx-auto " alt="Brand Logo 6 " style="max-height: 100px; "></div>
-                    <div class="col-6 col-md-3 "><img src="images/meesho.png " class="d-block mx-auto " alt="Brand Logo 7 " style="max-height: 100px; "></div>
-                    <div class="col-6 col-md-3 "><img src="images/glowroad.jpg " class="d-block mx-auto " alt="Brand Logo 8 " style="max-height: 100px; "></div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-6 col-md-2"><img src="images/amazon.jpg" class="d-block mx-auto" alt="Brand Logo 5" style="max-height: 100px;"></div>
+                    <div class="col-6 col-md-2"><img src="images/ebay.jpg" class="d-block mx-auto" alt="Brand Logo 6" style="max-height: 100px;"></div>
+                    <div class="col-6 col-md-2"><img src="images/meesho.png" class="d-block mx-auto" alt="Brand Logo 7" style="max-height: 100px;"></div>
+                    <div class="col-6 col-md-2"><img src="images/glowroad.jpg" class="d-block mx-auto" alt="Brand Logo 8" style="max-height: 100px;"></div>
+                    <div class="col-6 col-md-2"><img src="images/jiomart.png" class="d-block mx-auto" alt="Brand Logo 8" style="max-height: 100px;"></div>
+                    <div class="col-6 col-md-2"><img src="images/myntra.png" class="d-block mx-auto" alt="Brand Logo 8" style="max-height: 100px;"></div>
                 </div>
             </div>
             <!-- Add more carousel items as needed -->
         </div>
-        <a class="carousel-control-prev " href="#brandCarousel " role="button " data-slide="prev ">
-            <span class="carousel-control-prev-icon " aria-hidden="true "></span>
-            <span class="sr-only ">Previous</span>
+        <a class="carousel-control-prev" href="#brandCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </a>
-        <a class="carousel-control-next " href="#brandCarousel " role="button " data-slide="next ">
-            <span class="carousel-control-next-icon " aria-hidden="true "></span>
-            <span class="sr-only ">Next</span>
+        <a class="carousel-control-next" href="#brandCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </a>
     </div>
 
@@ -303,8 +335,8 @@
         <div class="container ">
             <div class="row align-items-center ">
                 <div class="col-md-6 mb-4 ">
-                    <h2 style="font-size: 1.2rem; font-weight: 600; color: purple; ">Seller Sathi</h2>
-                    <h1 style="font-weight: 800; ">Who we are</h1>
+                    <h2 style="font-size: 1.2rem; font-weight: 600; color: purple; ">SELLER SATHI</h2>
+                    <h1 style="font-weight: 800; ">WHO WE ARE</h1>
                     <p>Seller Sathi is the best E-commerce product cataloging and listing service company in Delhi, Mumbai, and across India helping sellers to sell products online on various marketplaces. Our specialized team of E-commerce cataloging services
                         will help you to grow online sales.</p>
                 </div>
@@ -404,12 +436,10 @@
     </script>
 
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
 </body>
 
 </html>
