@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $mail = new PHPMailer(true);
 
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER; // Enable verbose debug output
+   // $mail->SMTPDebug = SMTP::DEBUG_SERVER; // Enable verbose debug output
 
     try {
         // Server settings
