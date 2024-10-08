@@ -48,6 +48,16 @@ html {
     border-radius: 5px;
 }
 
+footer a {
+    text-decoration: none;
+    color: #ff5722;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    /* Change to your desired hover color */
+    transform: scale(1.1);
+    /* Slightly enlarges the link */
+    text-shadow: 0 0 5px lightskyblue;
 }
