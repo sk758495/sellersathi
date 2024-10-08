@@ -140,19 +140,16 @@
 
     <!-- What are the benefits of Sellersathi? -->
 
-    <div class="container-fluid">
-        <h1 class="about-title">ABOUT US</h1>
-
-        <h6 class="know-me">get to know us</h6>
-
-        <h2 class="honesty">Honesty, Integrity & Experience</h2>
-
-        <p class="peragraph">A “marketplace seller service provider” is a pivotal entity within the E-commerce ecosystem, offering comprehensive support and solutions to individuals and businesses looking to thrive in online marketplaces. Let’s delve into what this entails:</p>
-        <p class="peragraph">As a marketplace seller service provider, our mission is to empower businesses and individuals to succeed in the dynamic world of E-commerce. We understand the challenges and complexities of selling on online marketplaces and aim to alleviate
-            those burdens by providing tailored services and expert guidance.
-
-        </p>
+    <div class="container" style="margin-bottom: 30px; color: rgb(71, 49, 132);">
+        <h6 class="benifit-title">What are the benefits of Sellersathi?</h6>
+        <h1 class="benifit">Budget-Friendly and Affordable Pricing</h1>
+        <h2 class="benifit">Ethical and Transparent Dealings</h2>
+        <h3 class="benifit">One-Stop E-commerce Expertise</h3>
+        <h4 class="benifit">Enhanced Client Experience</h4>
+        <h5 class="benifit">Strategic Lead Generation</h5>
+        <h6 class="benifit">Rapid Customer Engagement</h6>
     </div>
+
 
     <!-- Footer section -->
 
@@ -227,6 +224,21 @@
         animateCount('brand', 250);
     </script>
 
+    <script>
+        document.addEventListener("scroll", function() {
+            const benefits = document.querySelectorAll('.benifit');
+            const scrollPosition = window.scrollY + window.innerHeight;
+
+            benefits.forEach((benefit, index) => {
+                const benefitPosition = benefit.getBoundingClientRect().top + window.scrollY;
+
+                if (scrollPosition > benefitPosition + 100) { // Adjust 100 as needed
+                    benefit.style.opacity = 1; // Make it visible
+                    benefit.style.transform = 'translateY(0)'; // Move back to original position
+                }
+            });
+        });
+    </script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

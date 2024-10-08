@@ -163,3 +163,72 @@ section .border {
     border-radius: 5px;
     box-shadow: 0 0 3px black;
 }
+
+
+/* hat are the benefits of Sellersathi? */
+
+.benifit {
+    margin: 10px 0 30px;
+    color: #222;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(20px);
+    /* Slightly move down */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Smooth transition */
+}
+
+.benifit-title {
+    text-align: left;
+    margin: 30px;
+    font-weight: 700;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .benifit-title {
+        font-size: 1.5em;
+        /* Adjust font size for smaller screens */
+        margin: 20px;
+        /* Reduced margin */
+        font-weight: 700;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+    .benifit {
+        font-size: 1.2em;
+        /* Smaller font size for benefits */
+        margin: 5px 0;
+        /* Reduce margin */
+        text-shadow: none;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .benifit-title {
+        font-size: 1.2em;
+        /* Further adjust for very small screens */
+        margin: 15px;
+        /* Further reduced margin */
+        font-weight: 700;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+    .benifit {
+        font-size: 1em;
+        /* Even smaller font size */
+        margin: 3px 0;
+        /* Further reduced margin */
+        text-shadow: none;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 20px;
+    }
+}
