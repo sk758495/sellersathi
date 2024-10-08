@@ -25,6 +25,26 @@ html {
 
 /* featured-carouse */
 
+@media (max-width: 768px) {
+    #carouselExampleIndicators {
+        display: none;
+    }
+    #carouselExampleIndicators .carousel-item img {
+        display: none;
+        /* Cover the entire area without distortion */
+    }
+    /* Optional: Adjust carousel controls for mobile */
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+        /* Make controls slightly wider for easier tapping */
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        display: none;
+    }
+}
+
 
 /* Hero Section */
 
