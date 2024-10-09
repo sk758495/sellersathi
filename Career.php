@@ -14,7 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $qualification = htmlspecialchars(trim($_POST['qualification']));
     $schoolCollege = htmlspecialchars(trim($_POST['schoolCollege']));
     $percentage = htmlspecialchars(trim($_POST['percentage']));
-    $cgpa = htmlspecialchars(trim($_POST['cgpa']));
     $expectedSalary = htmlspecialchars(trim($_POST['expectedSalary']));
     $workExperience = htmlspecialchars(trim($_POST['workExperience']));
     $lastCompany = htmlspecialchars(trim($_POST['lastCompany']));
@@ -67,8 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <tr><th>Field</th><td>$field</td></tr>
                         <tr><th>Qualification</th><td>$qualification</td></tr>
                         <tr><th>School/College</th><td>$schoolCollege</td></tr>
-                        <tr><th>Percentage</th><td>$percentage</td></tr>
-                        <tr><th>CGPA</th><td>$cgpa</td></tr>
+                        <tr><th>Percentage/CGPA</th><td>$percentage</td></tr>                        
                         <tr><th>Expected Salary</th><td>$expectedSalary</td></tr>
                         <tr><th>Work Experience</th><td>$workExperience</td></tr>
                         <tr><th>Last Company</th><td>$lastCompany</td></tr>
@@ -265,14 +263,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </div>
 
     <div class="form-group mb-4">
-        <label for="percentage" class="font-weight-bold">Percentage:</label>
+        <label for="percentage" class="font-weight-bold">Percentage/CGPA:</label>
         <input type="number" id="percentage" class="form-control" name="percentage" placeholder="Enter percentage" required />
     </div>
 
-    <div class="form-group mb-4">
-        <label for="cgpa" class="font-weight-bold">CGPA:</label>
-        <input type="number" id="cgpa" class="form-control" name="cgpa" step="0.01" placeholder="Enter CGPA" required />
-    </div>
+   
 
     <div class="form-group mb-4">
         <label for="expectedSalary" class="font-weight-bold">Expected Salary:</label>
