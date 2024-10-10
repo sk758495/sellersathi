@@ -1,48 +1,3 @@
-<?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-
-require 'vendor/autoload.php'; // Ensure the path to autoload.php is correct
-
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $zip = htmlspecialchars($_POST['zip']);
-    $contact = htmlspecialchars($_POST['contact']);
-    $services = htmlspecialchars($_POST['services']);
-
-    $mail = new PHPMailer(true);
-
-   // $mail->SMTPDebug = SMTP::DEBUG_SERVER; // Enable verbose debug output
-
-    try {
-        // Server settings
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'arjuncableconverters@gmail.com'; // Your SMTP username
-        $mail->Password = 'qnxlyhxxigecbqls'; // Use your App Password here
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587; // Use 587 for TLS
-
-        // Recipients
-        $mail->setFrom('arjuncableconverters@gmail.com', 'Seller Sathi');
-        $mail->addAddress('skvarma758495@gmail.com', 'Recipient'); 
-
-        // Content
-        $mail->isHTML(false);
-        $mail->Subject = 'New Contact Form Submission';
-        $mail->Body    = "Name: $name\nEmail: $email\nZip Code: $zip\nContact Number: $contact\nServices: $services";
-
-        // Send the email
-        $mail->send();
-        $message = 'Message sent successfully.';
-    } catch (Exception $e) {
-        $message = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,15 +9,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
+    <link rel="stylesheet" href="service.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="contact_us.css">
 </head>
 
 <body>
 
     <!-- Navbar -->
+    <!-- Updated Navbar with Links -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="box-shadow: 0 0 10px black">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -96,62 +52,118 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </div>
         </div>
     </nav>
+
     <script>
-        // Set active class on navbar links based on current page
+        // Get the current page URL
         const currentPage = window.location.pathname.split('/').pop();
-        document.querySelectorAll('.nav-link').forEach(link => {
+
+        // Get all nav links
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Loop through links and set active class based on the current page
+        navLinks.forEach(link => {
             if (link.getAttribute('href') === currentPage) {
                 link.classList.add('active');
             }
         });
     </script>
 
-    <!-- Contact Us Section -->
-    <section class="contact-us-section py-5">
+    <!-- Navbar End -->
+
+    <!-- Service Cart -->
+    <section style=" background-color: lightskyblue; padding: 10px;">
+
         <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <?php if (isset($message)): ?>
-                <div class="alert alert-info text-center"><?php echo $message; ?></div>
-            <?php endif; ?>
-            <form action="contact_us.php" method="POST">
-                <div class="form-row">
-                    <div class="form-group col-md-6 col-12">
-                        <label for="name">Your Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group col-md-6 col-12">
-                        <label for="email">Your Email Address</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+
+            <h1 class="service-title">ECOMMERCE SERVICES</h1>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 mb-4" id="cart-section">
+                    <div class="card">
+                        <img src="images/tatacliq.png" class="card-img-top" alt="Product Image 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tata CLiQ Seller</h5>
+                            <p class="card-text">Ecommerce</p>
+                        </div>
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6 col-12">
-                        <label for="zip">Your Zip Code</label>
-                        <input type="text" class="form-control" id="zip" name="zip" placeholder="Enter your zip code" required>
-                    </div>
-                    <div class="form-group col-md-6 col-12">
-                        <label for="contact">Your Contact Number</label>
-                        <input type="tel" class="form-control" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+                <div class="col-md-6 col-sm-6 mb-4" id="cart-section">
+                    <div class="card">
+                        <img src="images/jiomart.png" class="card-img-top" alt="Product Image 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jio Mart Seller</h5>
+                            <p class="card-text">Ecommerce</p>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="services">What Services Are You Interested In?</label>
-                    <select class="form-control" id="services" name="services" required>
-                        <option value="" disabled selected>Select a service</option>
-                        <option value="ecommerce">Ecommerce Seller Account</option>
-                        <option value="investment">Short Time Investment</option>
-                        <option value="warehouse">Warehouse</option>
-                        <option value="b2b">B2B / Offline Product Trading</option>
-                        <option value="Development">Website Development</option>                               
-                    </select>
+
+                <div class="col-md-6 col-sm-6 mb-4" id="cart-section">
+                    <div class="card">
+                        <img src="images/bigbasket.png" class="card-img-top" alt="Product Image 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Big Basket Seller</h5>
+                            <p class="card-text">Ecommerce</p>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" name="send" class="btn btn-primary">Submit</button>
-            </form>
+
+                <div class="col-md-6 col-sm-6 mb-4" id="cart-section">
+                    <div class="card">
+                        <img src="images/nykaaa.png" class="card-img-top" alt="Product Image 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nykaa Seller</h5>
+                            <p class="card-text">Ecommerce</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 mb-4" id="cart-section">
+                    <div class="card">
+                        <img src="images/myntra.png" class="card-img-top" alt="Product Image 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Myntra Seller</h5>
+                            <p class="card-text">Ecommerce</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 mb-4" id="cart-section">
+                    <div class="card">
+                        <img src="images/ajio.png" class="card-img-top" alt="Product Image 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">AJIO SELLER</h5>
+                            <p class="card-text">Ecommerce</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 mb-4" id="cart-section">
+                    <div class="card">
+                        <img src="images/flipkart.jpg" class="card-img-top" alt="Product Image 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">flipkart Seller</h5>
+                            <p class="card-text">Ecommerce</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 mb-4" id="cart-section">
+                    <div class="card">
+                        <img src="images/amazon.jpg" class="card-img-top" alt="Product Image 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">AMAZON Seller</h5>
+                            <p class="card-text">Ecommerce</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cart items as needed -->
+            </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-     
+
+    <!-- Footer section -->
+
     <footer class="bg-dark text-light py-5 ">
         <div class="container ">
             <div class="row ">
@@ -174,7 +186,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
 
                 <div class="col-md-3 mb-3 ">
-                    <h5><a href="faq.html">FAQs</a></h5>
+                    <h5>
+                        <a href="faq.html">FAQs</a>
+                    </h5>
                     <ul class="list-unstyled ">
                         <li><a href="term-condition.html" class="text-light ">Terms and
                                     Conditions</a></li>
@@ -211,10 +225,42 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+
+    <script>
+        function animateCount(elementId, targetCount) {
+            let count = 0;
+            const increment = Math.ceil(targetCount / 100);
+
+            const updateCount = () => {
+                count += increment;
+                if (count > targetCount) {
+                    count = targetCount;
+                }
+                document.getElementById(elementId).innerText = count;
+
+                if (count < targetCount) {
+                    requestAnimationFrame(updateCount);
+                }
+            };
+
+            requestAnimationFrame(updateCount);
+        }
+
+        animateCount('sellersCount', 1000);
+        animateCount('ordersCount', 1000);
+        animateCount('revenueCount', 200);
+        animateCount('brand', 250);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
 </body>
 
 </html>

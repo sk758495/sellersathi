@@ -36,14 +36,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'sk758495@gmail.com'; // Your SMTP username
-                $mail->Password = 'xzixmftqmolatbqc'; // Use your App Password here
+                $mail->Username = 'arjuncableconverters@gmail.com'; // Your SMTP username
+                $mail->Password = 'qnxlyhxxigecbqls'; // Use your App Password here
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port = 587; // Use 587 for TLS
 
                 // Recipients
-                $mail->setFrom('sk758495@gmail.com', 'Job Application');
-                $mail->addAddress('skvarma758495@gmail.com', 'Recipient');
+                $mail->setFrom('arjuncableconverters@gmail.com', 'Job Application');
+                $mail->addAddress('hr.baroda@sellersathi.in', 'Recipient');
 
                 // Content
                 $mail->isHTML(true); // Set email format to HTML
