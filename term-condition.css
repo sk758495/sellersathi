@@ -134,6 +134,39 @@ html {
     /* Set a minimum height to ensure all paragraphs are the same size */
 }
 
+.pp-card {
+    background-color: white;
+    border: 3px solid #009879;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.pp-card:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pp-card h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pp-card p {
+    font-size: 16px;
+    /* Keep the font size */
+    color: #000000;
+    line-height: 1.6;
+    margin: 20px;
+    text-align: center;
+    /*min-height: 60px;
+    /* Set a minimum height to ensure all paragraphs are the same size */
+}
+
 .review-card h4 {
     font-size: 18px;
     font-weight: 700;

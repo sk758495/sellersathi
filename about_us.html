@@ -84,30 +84,42 @@
 
     <!---Count start---->
 
-    <div class="container my-5">
-        <div class="row text-center">
-            <div class="col-md-3">
-                <div class="stat-card">
-                    <h2 class="stat-number text-blue" id="sellersCount">0</h2>
-                    <p class="stat-label">Sellers</p>
+    <div class="container my-5 ">
+        <div class="row text-center ">
+            <div class="col-md-3 ">
+                <div class="stat-card ">
+                    <div style=" display: flex; text-align: center; align-items: center; justify-content: center; ">
+                        <h2 class="stat-number text-blue " id="sellersCount ">0</h2>
+                        <h1 style="font-weight: 600 ">+</h1>
+                    </div>
+                    <p class="stat-label ">Sellers</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="stat-card">
-                    <h2 class="stat-number text-red" id="ordersCount">0</h2>
-                    <p class="stat-label">Catalogs Managed</p>
+            <div class="col-md-3 ">
+                <div class="stat-card ">
+                    <div style=" display: flex; text-align: center; align-items: center; justify-content: center; ">
+                        <h2 class="stat-number text-red " id="ordersCount ">0</h2>
+                        <h1 style="font-weight: 600 ">+</h1>
+                    </div>
+                    <p class="stat-label ">Catalogs Managed</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="stat-card">
-                    <h2 class="stat-number text-green" id="revenueCount">0</h2>
-                    <p class="stat-label">SKU Listed</p>
+            <div class="col-md-3 ">
+                <div class="stat-card ">
+                    <div style=" display: flex; text-align: center; align-items: center; justify-content: center; ">
+                        <h2 class="stat-number text-green " id="revenueCount ">0</h2>
+                        <h1 style="font-weight: 600 ">+</h1>
+                    </div>
+                    <p class="stat-label ">SKU Listed</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="stat-card">
-                    <h2 class="stat-number text-pink" id="brand">0</h2>
-                    <p class="stat-label">Brands Launched</p>
+            <div class="col-md-3 ">
+                <div class="stat-card ">
+                    <div style=" display: flex; text-align: center; align-items: center; justify-content: center; ">
+                        <h2 class="stat-number text-pink " id="brand ">0</h2>
+                        <h1 style="font-weight: 600 ">+</h1>
+                    </div>
+                    <p class="stat-label ">Brands Launched</p>
                 </div>
             </div>
         </div>
@@ -240,10 +252,10 @@
             requestAnimationFrame(updateCount);
         }
 
-        animateCount('sellersCount', 1000);
-        animateCount('ordersCount', 1000);
-        animateCount('revenueCount', 200);
-        animateCount('brand', 250);
+        animateCount("sellersCount ", 7000);
+        animateCount("ordersCount ", 7000);
+        animateCount("revenueCount ", 350);
+        animateCount("brand ", 250);
     </script>
 
     <script>
