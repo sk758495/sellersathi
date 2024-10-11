@@ -4,7 +4,7 @@ body {
 
 .hero-section {
     background-color: #f8f9fa;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .hero-section img {
@@ -16,8 +16,8 @@ body {
 .wh-title {
     text-align: center;
     font-weight: 800;
-    font-size: 45px;
-    text-shadow: 2px 12px 4px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
     color: rgb(0, 162, 255);
     text-transform: uppercase;
     /* Text shadow effect */
@@ -36,7 +36,7 @@ body {
 
 .content-section {
     background-color: #ffffff;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .container h2 {

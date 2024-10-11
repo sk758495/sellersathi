@@ -35,8 +35,18 @@ html {
     text-align: center;
     margin: 30px;
     font-weight: 800;
-    font-size: 58px;
-    text-shadow: 2px 12px 4px rgba(0, 0, 0, 0.5);
+    font-size: 35px;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(0, 162, 255);
+    /* Text shadow effect */
+}
+
+.ecomm-title {
+    text-align: center;
+    margin: 30px;
+    font-weight: 800;
+    font-size: 35px;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
     color: rgb(0, 162, 255);
     /* Text shadow effect */
 }
@@ -216,4 +226,18 @@ footer a:hover {
     transform: scale(1.1);
     /* Slightly enlarges the link */
     text-shadow: 0 0 5px lightskyblue;
+}
+
+#image-x {
+    border-radius: 30px;
+    box-shadow: 0 0 10px black;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    #image-x {
+        border-radius: 0px;
+        box-shadow: none;
+        margin-top: -1px;
+    }
 }
