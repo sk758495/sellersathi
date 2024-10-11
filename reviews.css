@@ -138,11 +138,13 @@ html {
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
+    color: gold;
 }
 
 .rating span {
     font-size: 22px;
-    color: #f39c12;
+    color: rgb(255, 200, 61);
+    border: 1px bold;
 }
 
 .rating p {
