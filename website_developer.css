@@ -223,13 +223,17 @@ img {
 .section-padding {
     padding: 1.5rem 0;
     /* Adjust padding as needed */
-    background-color: skyblue;
-    margin-top: 20px;
 }
 
 .section-padding:hover {
     padding: 1.5rem 0;
     /* Adjust padding as needed */
+}
+
+.div-t {
+    background-color: skyblue;
+    margin: 0 14px;
+    padding: 10px;
 }
 
 .headline {
@@ -252,7 +256,7 @@ img {
 }
 
 .description-text {
-    margin: 10px 0;
+    margin: 0px 0;
     line-height: 1.6;
     /* Improve readability */
 }
@@ -272,6 +276,11 @@ img {
     .subheadline {
         font-size: 1rem;
         /* Adjust font size for smaller screens */
+    }
+    .div-t {
+        background-color: skyblue;
+        margin: 0px;
+        padding: 10px;
     }
 }
 
