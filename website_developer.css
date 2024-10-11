@@ -400,3 +400,21 @@ img {
         /* Further reduce image height */
     }
 }
+
+#image-x {
+    border-radius: 30px;
+    box-shadow: 0 0 10px black;
+    margin-top: 10px;
+}
+
+.text-center {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #image-x {
+        border-radius: 0px;
+        box-shadow: none;
+        margin-top: -1px;
+    }
+}
