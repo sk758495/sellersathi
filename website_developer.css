@@ -266,7 +266,7 @@ img {
 
 @media (max-width: 576px) {
     .headline {
-        font-size: 1.25rem;
+        font-size: 18px;
         /* Adjust font size for smaller screens */
     }
     .subheadline {
