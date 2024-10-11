@@ -69,6 +69,8 @@ html {
     color: purple;
 }
 
+.heading {}
+
 .buttons {
     margin-top: 20px;
 }
@@ -221,11 +223,12 @@ img {
 .section-padding {
     padding: 1.5rem 0;
     /* Adjust padding as needed */
+    background-color: skyblue;
+    margin: 20px 0;
 }
 
 .section-padding:hover {
     padding: 1.5rem 0;
-    background-color: rgb(213, 199, 199);
     /* Adjust padding as needed */
 }
 
