@@ -224,19 +224,12 @@ img {
     padding: 1.5rem 0;
     /* Adjust padding as needed */
     background-color: skyblue;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .section-padding:hover {
     padding: 1.5rem 0;
     /* Adjust padding as needed */
-}
-
-.content-container {
-    max-width: 1050px;
-    /* Limit max width for better readability */
-    margin: 0 auto;
-    /* Center the container */
 }
 
 .headline {
