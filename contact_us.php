@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <a class="nav-link" href="reviews.html" role="tab" aria-controls="nav-reviews" disabled>Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact_us.php" role="tab" aria-controls="nav-contact">Contact Us</a>
+                        <a class="nav-link" href="contact_us.php" role="tab" aria-controls="nav-contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Career.php" role="tab" aria-controls="nav-contact">Career</a>
@@ -150,7 +150,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <option value="Development">Website Development</option>                               
                     </select>
                 </div>
-                <button type="submit" name="send" class="btn btn-primary">Submit</button>
+                <button type="submit" name="send" style="margin-top: 10px;" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </section>
