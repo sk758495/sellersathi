@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         // Recipients
         $mail->setFrom('arjuncableconverters@gmail.com', 'Seller Sathi');
-        $mail->addAddress('skvarma758495@gmail.com', 'Recipient'); 
+        $mail->addAddress('arjuncableconverters@gmail.com', 'Recipient'); 
 
         // Content
         $mail->isHTML(false);
@@ -47,15 +47,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seller Sathi</title>
     <link rel="icon" href="images/LOGO-sellersathi.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="contact_us.css">
 </head>
@@ -87,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <a class="nav-link" href="reviews.html" role="tab" aria-controls="nav-reviews" disabled>Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact_us.php" role="tab" aria-controls="nav-contact">Contact</a>
+                        <a class="nav-link" href="contact_us.php" role="tab" aria-controls="nav-contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Career.php" role="tab" aria-controls="nav-contact">Career</a>
@@ -96,10 +95,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </div>
         </div>
     </nav>
+
     <script>
-        // Set active class on navbar links based on current page
+        // Get the current page URL
         const currentPage = window.location.pathname.split('/').pop();
-        document.querySelectorAll('.nav-link').forEach(link => {
+
+        // Get all nav links
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Loop through links and set active class based on the current page
+        navLinks.forEach(link => {
             if (link.getAttribute('href') === currentPage) {
                 link.classList.add('active');
             }
@@ -183,7 +188,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <li>
                             <a href="contact_us.php " class="text-light ">Contact Us</a>
                         </li>
-                        <li><a href="tel:9624902490 " class="text-light ">Call
+                        <li><a href="tel:9624402490 " class="text-light ">Call
                                     Me</a></li>
                     </ul>
                 </div>
@@ -211,9 +216,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!-- Bootstrap 5 JS and Popper.js (required for some components like dropdowns) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
 </body>
 

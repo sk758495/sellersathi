@@ -417,7 +417,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <li>
                             <a href="contact_us.php " class="text-light ">Contact Us</a>
                         </li>
-                        <li><a href="tel:9624902490 " class="text-light ">Call
+                        <li><a href="tel:9624402490 " class="text-light ">Call
                                     Me</a></li>
                     </ul>
                 </div>
